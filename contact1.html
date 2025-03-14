@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: #4C25A7;
+          font-family: Arial, sans-serif;
+          color: #333;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+        
+        h2 {
+            color: #0a0808;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid #0a0808;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+          color: #333;
+          font-size: 16px;
+          display: block;
+          margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+          width: 100%;
+          padding: 10px;
+          margin-top: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: #116b6e;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover ,
+        input[type="button"]:hover {
+          background-color: #0a5053;
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2 >Contact Us</h2>
+    <form action="index.html" method="get">
+      <label for="uname">Username: </label>
+      <input type="text" id="uname" name="uname" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone no: </label>
+      <input type="number" id="phone" name="phone" required>
+      <label for="review">Message:</label>
+      <textarea id="review" name="review" rows="4" cols="30"></textarea>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <!-- <input type="button" value="Return Home" onclick="location.href='index.html'"> -->
+      <input type="button" value="Return Home" onclick="location.href='index.html'">
+
+    </form> 
+  </div>   
+</body>
+</html>
